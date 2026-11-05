@@ -12,16 +12,16 @@ The app models listener preferences as vectors in an 8-dimensional genre space (
 - **Interactive Vector Input:** Adjust ratings across 8 genres using live sliders.
 - **Euclidean Metric ($L_2$ Norm):** Calculates straight-line distance between preference vectors.
 - **Mean-Centering (De-biasing):** Subtracts personal average ratings to eliminate strict vs. lenient rater bias.
-- **Cosine Similarity & Angles:** Computes $\cos(\theta)$ and angular difference via Cauchy-Schwarz to find true taste alignment[cite: 86, 90].
-- **Latent Space & Projections:** Uses Truncated SVD and Gram-Schmidt QR projections ($P = QQ^T$) to filter noise and verify idempotency ($P^2 = P$)[cite: 107, 108, 110, 171, 176, 196].
-- **Real-Time Predictions:** Compares Euclidean matches against angular matches side by side[cite: 90, 92].
+- **Cosine Similarity & Angles:** Computes $\cos(\theta)$ and angular difference via Cauchy-Schwarz to find true taste alignment.
+- **Latent Space & Projections:** Uses Truncated SVD and Gram-Schmidt QR projections ($P = QQ^T$) to filter noise and verify idempotency ($P^2 = P$).
+- **Real-Time Predictions:** Compares Euclidean matches against angular matches side by side.
 
 ---
 
 ## File Structure
 
 ```text
+└── README.md        # Documentation
 ├── backend.py       # NumPy math engine (Projections, Distances, Cosine)
 ├── frontend.py      # Streamlit user interface and dashboards
 ├── requirements.txt # Python package dependencies
-└── README.md        # Documentation
